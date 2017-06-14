@@ -15,7 +15,7 @@ def table_company(database, user, host, password):
         log.info('Connect to database %s' % database)
         conn = psycopg2.connect("dbname= '%s' user='%s'"
                                 "host='%s' password='%s'"
-                                % (database, user, host, password)
+                                % (database, user, host, password))
     except:
         print "I am unable to connect to the database"
 
