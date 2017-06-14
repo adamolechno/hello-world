@@ -4,7 +4,7 @@ import random
 import kafka
 
 logging.basicConfig(level=logging.DEBUG,
-                    filename='/home/aolechno/python/python-postgres/python-kafka-produer.log',
+                    filename='xxxxxx/python-kafka-produer.log',
                     format='"%(asctime).19s", "%(name)s", "%(levelname)s",'
                            '"%(message)s"')
 
@@ -59,6 +59,6 @@ class KafkaProducer:
 
 if __name__ == "__main__":
     a = KafkaProducer()
-#   a.file_generator('/home/aolechno/python/python-postgres/filegenerator.csv', 10)
-    a.kafka_producer('hdw2dn1.asseco.pl:6667, hdw2dn2.asseco.pl:6667', 'test')
-    a.kafka_consumer('test', 'hdw2dn1.asseco.pl:6667, hdw2dn2.asseco.pl:6667')
+#   a.file_generator('xxxxx/filegenerator.csv', 10)
+    a.kafka_producer('xxxx:6667, xxxx:6667', 'test')
+    a.kafka_consumer('test', 'xxxx:6667, xxx:6667')
