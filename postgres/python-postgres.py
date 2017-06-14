@@ -45,7 +45,7 @@ class FirstSelect:
         """
         """
         log.info('Connect to database %s' % (database))
-        conn_string = ("host='ambari.server' dbname='aolechno' user='aolechno' password='aolechno'")
+        conn_string = ("host='xxxxxx' dbname='xxxxxx' user='xxxxxx' password='xxxxx'")
         try:
             conn = psycopg2.connect(conn_string)
             log.info('Successfully connected to %s databse!' % (database))
@@ -64,5 +64,5 @@ class FirstSelect:
 
 if __name__ == "__main__":
     selectall = FirstSelect()
-    selectall.selectallfromtable('aolechno', 'ao')
-    selectall.insertintotable('aolechno', 'ao')
+    selectall.selectallfromtable('xxxx', 'xx')
+    selectall.insertintotable('xxxx', 'xx')
