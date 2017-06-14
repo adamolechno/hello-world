@@ -21,7 +21,7 @@ class FirstSelect:
         Module that select all form specified  table.
         """
         log.info('Connect to database %s' % (database))
-        conn_string = ("host='ambari.server' dbname='aolechno' user='aolechno' password='aolechno'")
+        conn_string = ("host='xxxx' dbname='xxx' user='xxxxx' password='xxxxx'")
         try:
             conn = psycopg2.connect(conn_string)
             log.info('Successfully connected to %s databse!' % (database))
